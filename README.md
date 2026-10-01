@@ -14,7 +14,7 @@ No project-specific, person-specific, or organization-specific content - just th
 
 **What it is not.**
 - Not a ready-to-run tool or library, and not an API client for Viva Engage.
-- Not an agent or prompt definition. A skill is on-demand instructions only; the skill format itself cannot restrict tools or start subagents, so these skills deliberately declare none (GitHub Copilot does not support such fields in a skill). If you want a fixed tool set or subagents, put them into your own custom agent or prompt file and let that agent use these skills.
+- Not an agent or prompt definition. A skill is on-demand instructions only; the skill format itself cannot restrict tools or start subagents, so these skills deliberately declare none (GitHub Copilot does not support such fields in a skill). If you want a fixed tool set or subagents, put them into your own custom agent or prompt file and let that agent use these skills. A ready-to-copy example (agent, read-only verifier subagent, and a `/build-demo` prompt for VS Code) is in `examples/vscode/`.
 
 **Use it only with demo accounts in an environment you own.** The automation operates the web UI in the name of the signed-in person.
 
