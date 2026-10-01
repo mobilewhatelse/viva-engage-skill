@@ -4,6 +4,20 @@ A skill collection compatible with both **Claude Code** and **GitHub Copilot**, 
 
 No project-specific, person-specific, or organization-specific content - just the mechanics of the platform, distilled from a real end-to-end seeding project: posts, questions, announcements, polls, praise, comments, replies, mentions, images, topics, reactions, votes, best answers, member roles, pinning, events, community info, and favorites.
 
+## What is this for?
+
+**Purpose.** Demo, training, screenshot, and test environments for Viva Engage need realistic content: hundreds of items such as questions with best answers, polls, praise, comments, reactions, announcements, and events, created by many different people. Doing that by hand takes hours and cannot be repeated. These skills teach an AI coding assistant (Claude Code, GitHub Copilot) how to build and run a browser automation with Playwright that creates all of it from a spreadsheet - repeatably, and as the right person each time.
+
+**Who it is for.** Anyone who builds or runs Viva Engage demos, training sites, or UI tests, and the AI assistants working for them.
+
+**What you get.** Field-tested knowledge, not a program: which controls exist and how they behave, which locators work in this UI, how to sign in as many users, how to avoid duplicates and toggling reactions, and which roles unlock which controls. You ask your assistant for the automation (for example: "write a Playwright runner that posts the rows of this spreadsheet as the listed users into this community"), and it loads these skills on demand and avoids the known traps.
+
+**What it is not.**
+- Not a ready-to-run tool or library, and not an API client for Viva Engage.
+- Not an agent or prompt definition. A skill is on-demand instructions only; the skill format itself cannot restrict tools or start subagents, so these skills deliberately declare none (GitHub Copilot does not support such fields in a skill). If you want a fixed tool set or subagents, put them into your own custom agent or prompt file and let that agent use these skills.
+
+**Use it only with demo accounts in an environment you own.** The automation operates the web UI in the name of the signed-in person.
+
 ## Relationship to existing resources
 
 As of this writing (October 2026) there is **no officially maintained Viva Engage skill collection** from Microsoft for Claude Code or GitHub Copilot. Related things that do exist, none of which cover this ground:
