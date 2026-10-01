@@ -1,0 +1,10 @@
+.env
+.auth/
+.venv/
+__pycache__/
+*.pyc
+state.json
+errors/
+*.log
+.playwright-profile/
+*.xlsx
