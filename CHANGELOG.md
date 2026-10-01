@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Docs: added `CONTRIBUTING.md` (how to add a skill, portable frontmatter, content policy, PR checklist) and `.github/copilot-instructions.md` so contributors and their assistants follow the same rules.
 - Examples: `examples/vscode/` with a custom agent (fixed tool set, may call a subagent), a read-only verifier subagent, and a `/build-demo` prompt file - the supported way to combine the skills with tools and subagents in VS Code.
 - Docs: added a "What is this for?" section at the top of the README (purpose, audience, what you get, what it is not, why the skills declare no tools or subagents).
 

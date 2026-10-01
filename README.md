@@ -117,6 +117,10 @@ Entry point: [`.github/skills/viva-engage-community-admin/SKILL.md`](.github/ski
 
 This repository intentionally contains no user names, e-mail addresses, passwords, tokens, environment or organization names, identifiers, or links. Examples use placeholders. See [CLAUDE.md](CLAUDE.md) and the check script in `tools/`.
 
+## Contributing
+
+Contributions are welcome. [CONTRIBUTING.md](CONTRIBUTING.md) explains how to add or change a skill (portable frontmatter, structure, marketplace entry, checks, content policy).
+
 ## License
 
 MIT - see [LICENSE](LICENSE).
