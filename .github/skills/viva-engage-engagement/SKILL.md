@@ -1,9 +1,7 @@
 ---
 name: viva-engage-engagement
 description: Drive Viva Engage interactions through the web UI with Playwright - reactions on posts and comments (hover picker and name mapping), poll votes, marking best or verified answers, the one-action-per-user rule, and how to plan stand-in users when some accounts cannot sign in. Use when the user wants to make a Viva Engage community look used (likes, votes, best answers) or hits toggling and duplicate-action problems.
-allowed-tools: [shell]
-argument-hint: "which interaction (reaction, vote, best answer), on which items, and do all acting users have working sessions?"
-user-invocable: true
+license: MIT
 ---
 
 # Viva Engage engagement

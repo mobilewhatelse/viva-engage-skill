@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Fix: user feedback reported that the skills did not work in GitHub Copilot, whose harness does not understand some of the frontmatter properties (its documentation lists only `name`, `description`, `license`, and `allowed-tools` as text). Removed `allowed-tools`, `argument-hint`, and `user-invocable` from all four `SKILL.md` files; frontmatter is now only `name`, `description`, `license` (the portable set documented for Copilot and Claude Code).
+- Added `tools/check_skills.py`, which fails on non-portable frontmatter fields, name/folder mismatches, over-long descriptions, and unsafe YAML in descriptions.
+- Docs: corrected the README and CLAUDE.md statement that Copilot ignores the extra fields.
+
 ## 0.1.0
 
 - Initial release with four skills:

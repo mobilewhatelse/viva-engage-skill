@@ -1,9 +1,7 @@
 ---
 name: viva-engage-automation
 description: Foundation for automating Viva Engage through its web UI with Playwright - why UI automation, per-user browser sessions and automatic sign-in, robust locators for a UI that uses fake placeholders and portals, idempotent Excel-driven runners with a state file, retry rules, troubleshooting, and a phase order for seeding a demo environment. Use when the user wants to script, seed, or test Viva Engage (formerly Yammer) content as different users, or when a Viva Engage automation misbehaves.
-allowed-tools: [shell]
-argument-hint: "what should be created or changed in Viva Engage, and as which users (real sessions, or demo accounts)?"
-user-invocable: true
+license: MIT
 ---
 
 # Viva Engage automation (foundation)

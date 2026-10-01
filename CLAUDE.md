@@ -5,20 +5,21 @@ Skills live in `.github/skills/<skill-name>/SKILL.md`.
 
 ## When adding or modifying skills
 
-Every `SKILL.md` must include these frontmatter fields so the skill works in both tools:
+Every `SKILL.md` must use **only the frontmatter fields that both Claude Code and GitHub Copilot document**:
 
 ```yaml
 ---
 name: viva-engage-<skill-name>
 description: <one or two sentences - what it covers and when to invoke it>
-allowed-tools: [shell]
-argument-hint: "<short hint shown in Copilot Chat>"
-user-invocable: true
+license: MIT
 ---
 ```
 
-- `name` and `description` - used by both Claude Code and GitHub Copilot
-- `allowed-tools`, `argument-hint`, `user-invocable` - Copilot-specific; Claude Code ignores them
+- `name` (must equal the folder name; lowercase letters, digits, hyphens; max 64) and `description` (10-1024 characters, plain single-line text without `: ` or ` #`) are required.
+- `license` is optional but harmless.
+- **Do not add other fields.** `argument-hint`, `user-invocable`, `disable-model-invocation`, and `allowed-tools` are not understood by every harness; GitHub Copilot reports them as unsupported properties. `allowed-tools` also pre-approves shell access, which these documentation-only skills do not need.
+
+Run `python tools/check_skills.py` before every commit - it enforces this.
 
 ## Structure
 
@@ -35,10 +36,11 @@ This repository is public. It must never contain:
 
 Examples use placeholders (`<community>`, `Firstname Lastname`, `<permalink>`). Path *patterns* such as `/main/threads/<id>` are fine; real IDs are not. Use neutral wording ("environment", "organization") and never name a real one.
 
-Run the check before every commit:
+Run the checks before every commit:
 
 ```
 python tools/check_clean.py
+python tools/check_skills.py
 ```
 
 It fails on URLs, e-mail addresses, domain names, GUIDs, long opaque identifiers, credential assignments, and one environment-specific word. Keep any private deny-list of real names *outside* this repository.

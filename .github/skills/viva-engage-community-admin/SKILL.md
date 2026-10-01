@@ -1,9 +1,7 @@
 ---
 name: viva-engage-community-admin
 description: Administer a Viva Engage community through the web UI with Playwright - add members and set the Admin and Community expert roles, pin conversations and links, set the community info text, create events (date picker and time list), and mark communities as favorites, including the entry-point label changes and the traps around each control. Use when the user wants to set up or dress a Viva Engage community as an admin, or when an admin control cannot be found.
-allowed-tools: [shell]
-argument-hint: "which community, which admin action (members/roles, pin, event, info, favorite), and is the acting account an admin there?"
-user-invocable: true
+license: MIT
 ---
 
 # Viva Engage community administration

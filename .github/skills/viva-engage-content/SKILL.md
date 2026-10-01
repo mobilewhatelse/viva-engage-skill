@@ -1,9 +1,7 @@
 ---
 name: viva-engage-content
 description: Create Viva Engage content through the web UI with Playwright - discussions, questions, announcements (a discussion with the megaphone switch), polls, praise, comments, replies, real @mentions, image uploads, and topics, including how to find the new post's permalink and the exact controls, labels and gotchas of each composer. Use when the user wants to post, comment, or decorate conversations in Viva Engage as a specific user.
-allowed-tools: [shell]
-argument-hint: "which content type (discussion, question, announcement, poll, praise, comment, reply), in which community, as which user?"
-user-invocable: true
+license: MIT
 ---
 
 # Viva Engage content

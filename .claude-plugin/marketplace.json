@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Viva Engage skills for Claude Code and GitHub Copilot CLI - UI-level automation with Playwright: sessions, posts, polls, praise, comments, reactions, best answers, roles, pins, events",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "plugins": [
     {
       "name": "viva-engage",
       "source": "./",
       "description": "Automate Viva Engage through its web UI as many different users - recorded sessions and automatic sign-in, robust locators, idempotent runners, content creation (discussions, questions, announcements, polls, praise, comments, replies, mentions, images, topics), engagement (reactions, votes, best answers, stand-in users) and community administration (members and roles, pins, info, events, favorites)",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "skills": [
         "./.github/skills/viva-engage-automation",
         "./.github/skills/viva-engage-content",
